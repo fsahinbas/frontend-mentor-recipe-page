@@ -98,6 +98,7 @@ h2 {
 .recipe-time-table ul li span {
   font-weight: 600;
 }
+
 .recipe-indegredients ul,
 .recipe-instructions ol {
   padding-left: 1rem;
@@ -156,4 +157,43 @@ li:before {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .recipe-image {
+    border-radius: 0;
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  .recipe-time-table,
+  .recipe-description,
+  .recipe-indegredients,
+  .recipe-instructions,
+  .recipe-nutrion {
+    padding: 1rem;
+  }
+
+  .recipe-time-table {
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+  }
 }
